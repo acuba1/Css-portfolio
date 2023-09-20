@@ -1,47 +1,66 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap"
-      rel="stylesheet"
-    />
-    <title>Motivvational Portfolio</title>
+    <title>CSS Flag Project</title>
     <style>
-      body {
-        background-color: black;
+      /* Write your CSS Code here */
+      .flag {
+        background-color: #ce1126;
+        width: 900px;
+        height: 600px;
+        position: relative;
       }
-      .poster {
-        width: 50%;
-        margin-left: 25%;
-        margin-top: 100px;
-        color: white;
-        font-family: "Libre Baskerville", serif;
-        text-align: center;
-      }
-      h1 {
-        text-transform: uppercase;
-        font-size: 3rem;
 
-        color: rgb(235, 109, 13);
+      /*Blue Circle*/
+      .flag > div {
+        background-color: #002868;
+        height: 300px;
+        width: 100%;
+        position: absolute;
+        top: 150px;
+      }
+
+      /*White Circle*/
+      .flag > div > div {
+        width: 200px;
+        height: 200px;
+        background-color: white;
+        border-radius: 50%;
+        position: relative;
+        top: 50px;
+        left: 350px;
       }
       p {
-        font-size: 20px;
+        margin: 0;
+        font-size: 5rem;
+        color: White;
         text-align: center;
       }
-      img {
-        border: 5px solid white;
-        width: 100%;
+      body > div > div > div > p {
+        color: black;
       }
     </style>
   </head>
+
+  <!-- 
+  IMPORTANT! Do not change any HTML
+Don't add any classes/ids/elements 
+Use what you know about combining selectors 
+and CSS specificity instead.
+Hint 1: The flag is 900px by 600px and the circle is 200px by 200px.
+Hint 2: You can use CSS inspection to get the colors from
+https://appbrewery.github.io/flag-of-laos/
+-->
+
   <body>
-    <div class="poster">
-      <img src="./assets/images/motivation.jpg" alt="Motivation" />
-      <h1>Work Hard, Dream Big And Never Give Up</h1>
-      <p>You will be there one day.</p>
+    <div class="flag">
+      <p>The Flag</p>
+      <div>
+        <div>
+          <p>of Laos</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>
